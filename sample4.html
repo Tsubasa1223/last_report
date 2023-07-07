@@ -43,8 +43,8 @@
         const group = new THREE.Group();
         scene.add(group);
         const geometry = new THREE.SphereGeometry(30, 30, 30);
-        const textureLoader = new THREE.TextureLoader();  
-        const geometry = textureLoader.load("img/pokemon-1536847_1280.png");
+        var textureLoader = new THREE.TextureLoader();  
+        var texture = textureLoader.load("img/pokemon-1536847_1280.png");
         //const geometry = new THREE.BoxBufferGeometry(50, 50, 50);
         const material = new THREE.MeshStandardMaterial();
 
