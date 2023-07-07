@@ -42,11 +42,11 @@
         // グループを作成
         const group = new THREE.Group();
         scene.add(group);
-        const geometry = new THREE.SphereGeometry(50, 32, 32);
+        const geometry = new THREE.SphereGeometry(35, 32, 32);
         const textureLoader = new THREE.TextureLoader();  
         const texture = textureLoader.load("img/pokemon-1536847_1280.png");
         //const geometry = new THREE.BoxBufferGeometry(50, 50, 50);
-        const material = new THREE.MeshStandardMaterial({color: 0xFFFFFF});
+        const material = new THREE.MeshStandardMaterial();
         material.map = texture;
 
         for (let i = 0; i < 1000; i++) {
